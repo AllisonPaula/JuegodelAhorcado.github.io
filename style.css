@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap");
 :root{
     background:#02275f;
     --blanco: #ffffff;
@@ -23,11 +23,12 @@
         width: auto;
         margin: 5px;
         color: var(--blanco);
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 20px;
         cursor: pointer;
         border: none;
         transition: all .3s;  
+        font-weight: bold;
     
     }
     
@@ -37,8 +38,10 @@
         margin: 5px;
         border-bottom: 3px solid var(--blancoon);
         color: var(--white);
-        font-family: 'Rubik', sans-serif;
+        font-family: "Inter";
         font-size: 20px;
+        font-weight: bold;
+
     }
     #toast-qr{
         visibility: hidden;
@@ -97,11 +100,12 @@
         width: auto;
         margin: 5px;
         color: var(--blanco);
-        font-family: 'Rubik', sans-serif;
+        font-family: "Inter";
         font-size: 20px;
         cursor: pointer;
         border: none;
         transition: all .3s;  
+        font-weight: bold;
     }
     span.line{
         width: 40px;
@@ -109,8 +113,9 @@
         margin: 5px;
         border-bottom: 3px solid var(--blancoon);
         color: var(--white);
-        font-family: 'Rubik', sans-serif;
+        font-family: "Inter";
         font-size: 30px;
+        font-weight: bold;
     }
 }
 
@@ -126,7 +131,7 @@ body{
     background-color: var(--beige);
 }
 h6{
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     margin: 0;
     font-size: 14px;
 }
@@ -165,7 +170,8 @@ span{
     margin-left: auto;
     margin-right: auto;
     color: var(--blancoon);
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
+    font-weight: bold;
 }
 span.spaceline{
     width: 40px;
@@ -188,7 +194,8 @@ input{
     width: 80%;
     margin: 10px;
     font-size: 18px;
-    font-family: 'Rubik', sans-serif;   
+    font-family: "Inter";  
+    font-weight: bold; 
 }
 input:focus, input:active{
     border: none;
@@ -196,9 +203,8 @@ input:focus, input:active{
 p{
     background-color: transparent;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     font-size: 24px;
-    font-weight: bold;
     margin: 0%;
 }
 .block{
@@ -206,18 +212,17 @@ p{
 }
 #reglas{
     color: #203239;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     display: none;
 }
 .datos{
     color: var(--negro);
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     border-radius: 4px;
     background-color: var(--blancoon);
     padding: 8px;
     text-align: center;
     margin: 0 4px;
-    font-size: 14px;
 }
 .stats1{
     margin: auto;
@@ -226,7 +231,7 @@ p{
 }
 .reload{
     color: var(--negro);
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     border-radius: 4px;
     background-color: var(--blancoon);
     padding: 8px;
@@ -277,8 +282,9 @@ p{
     border-radius: 10px;
     border: none;
     color: var(--blancoon);
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     transition: all 0.5s;
+    font-weight:bold;
 
 }
 .toastbtn:hover{
@@ -314,12 +320,12 @@ button.lett{
     height: 30px;
     margin: 3px;
     color: var(--blanco);
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter";
     font-size: 15px;
-    font-weight: bold;
     cursor: pointer;
     border: none;
     transition: all .3s;
+    font-weight:bold;
 }
 button.lett:hover,.btnInicio:hover{
     background-color: var(--turqueza);
@@ -337,9 +343,22 @@ button.lett:active,.btnInicio:active{
 .header{
     margin-top: 5px;
     padding: 5px;
-    color:#cad9df;
+    color:#02275f;
     font-weight: bold;
     font-size:17px;
+}
+.pista{
+    font-size: 12px;
+    background: #964c10;
+    color: #ffffff;
+    padding: 10px;
+    margin: 2px;
+    font-family: "Inter";
+    font-weight: none;
+    border-radius:10px;
+    width: auto;
+    transition: all .3s;
+    font-weight:bold;
 }
 
 .premiorecibido{
@@ -349,11 +368,12 @@ button.lett:active,.btnInicio:active{
     width: auto;
     margin: 5px;
     color: var(--blanco);
-    font-family: 'Rubik', sans-serif;
+    font-family:"Inter";
     font-size: 15px;
     cursor: pointer;
     border: none;
-    transition: all .3s;  
+    transition: all .3s;
+    font-weight: bold;  
 }
 .premiorecibido:hover{
     background-color: var(--turqueza);
@@ -364,27 +384,46 @@ button.lett:active,.btnInicio:active{
     transform: scale(1.2);
 }
 
-
 /*Css de home.html*/
 .cofre{
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin:10px 0px 0px 20px;
     padding: 5px;
     border-radius: 20px;
+    position: absolute;
+}
+.cofre:hover{
+    opacity: 0;
+    cursor: pointer;
+}
+.cofresito{
+    width: 300px;
+    height: 300px;
+    margin: 10px 0px 0px 20px;
+    padding: 5px;
+    border-radius:20px ;
+}
+.tocar{
+    font-size: 13px;
+    color: var(--white);
+    margin: 0px 0px 0px 0px;
+    padding: 2px;
+    font-family: "Inter";
+    font-weight: bold; 
 }
 #premiopag{
     background-color: var(--blancoon);
     padding: 20px;
     border-radius: 10px;
     width: auto;
-    margin: 10px;
+    margin: 10px 0px 0px 80px;
     color: var(--blanco);
-    font-family: 'Rubik', sans-serif;
+    font-family:"Inter";
     font-size: 20px;
     cursor: pointer;
     border: none;
-    transition: all .3s;  
+    transition: all .3s; 
 }
 #premiopag:hover{
     background-color: var(--turqueza);
@@ -399,4 +438,10 @@ button.lett:active,.btnInicio:active{
     color: var(--white);
     margin: 0px 0px 0px 0px;
     padding: 2px;
+    font-family: "Inter";
+}
+.muñecofeliz{
+    width: 150px;
+    height: 150px;
+    margin:0px 0px 0px 20px;
 }
