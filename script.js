@@ -1,4 +1,4 @@
-var arr = ["ROSADO", "AZUL", "AMARRILLO", "VIOLETA", "NEGRO", "MARRON","CIAN", "VERDE", "TURQUEZA","BEIGE", "GRIS"];
+var arr = ["PADRE", "MADRE", "SOBRINO", "ABUELA","PRIMA", "HIJO", "TIA","BISABUELO", "PADRINO", "TATARABUELO", "HERMANA", "ESPOSO", "ESPOSA","CUÑADO", "CUÑADA", "MAMA", "MADRASTRA", "BISNIETO", "AHIJADA"];
 var intentos = 10;
 var sel = [];
 var ctrl = false;
@@ -145,7 +145,7 @@ function getLetter(valor){
             ctx.moveTo(114, 80);
             ctx.lineTo(134, 100);
             ctx.stroke();
-        }
+        } 
         /*end canvas*/
         if(intentos == 0){
             document.getElementById("lose").style.display = "block";

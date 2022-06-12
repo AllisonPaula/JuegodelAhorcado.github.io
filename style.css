@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 :root{
+    background:#02275f;
     --blanco: #ffffff;
     --white: #ffffff;
     --blancoon: #964c10;
     --turqueza: #f0b07b;
-    --beige: #062247;
     --claro: #a0e7d2;
     --azulito: #ffffff;
     --negro: #f5f1f1;
@@ -290,7 +290,7 @@ p{
 .game{
     color: var(--white);
     background: rgb(20,30,39);
-    background: linear-gradient(90deg, rgba(20,30,39,1) 0%, rgba(43,68,78,1) 50%, rgba(20,30,39,1) 100%);
+    background: linear-gradient(90deg, rgb(1, 23, 37) 0%, rgb(2, 28, 41) 50%, rgb(2, 25, 48) 100%);
     padding: 8px;
     display: none;
 }
@@ -337,5 +337,66 @@ button.lett:active,.btnInicio:active{
 .header{
     margin-top: 5px;
     padding: 5px;
-    color:var(--beige)
+    color:#cad9df;
+    font-weight: bold;
+    font-size:17px;
+}
+
+.premiorecibido{
+    background-color: var(--blancoon);
+    padding: 10px;
+    border-radius: 10px;
+    width: auto;
+    margin: 5px;
+    color: var(--blanco);
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    transition: all .3s;  
+}
+.premiorecibido:hover{
+    background-color: var(--turqueza);
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+    color: var(--blanco);
+    transform: scale(1.2);
+}
+
+
+/*Css de home.html*/
+.cofre{
+    width: 100px;
+    height: 100px;
+    margin:10px 0px 0px 20px;
+    padding: 5px;
+    border-radius: 20px;
+}
+#premiopag{
+    background-color: var(--blancoon);
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    margin: 10px;
+    color: var(--blanco);
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: all .3s;  
+}
+#premiopag:hover{
+    background-color: var(--turqueza);
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+    color: var(--blanco);
+    transform: scale(1.2);
+}
+.felicidades{
+    font-size: 20px;
+    color: var(--white);
+    margin: 0px 0px 0px 0px;
+    padding: 2px;
 }
