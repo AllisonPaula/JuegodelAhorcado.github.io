@@ -388,10 +388,11 @@ button.lett:active,.btnInicio:active{
 .cofre{
     width: 300px;
     height: 300px;
-    margin:10px 0px 0px 20px;
+    margin:10px 0px 0px 50px;
     padding: 5px;
     border-radius: 20px;
     position: absolute;
+    transition: all .3s;
 }
 .cofre:hover{
     opacity: 0;
@@ -400,24 +401,25 @@ button.lett:active,.btnInicio:active{
 .cofresito{
     width: 300px;
     height: 300px;
-    margin: 10px 0px 0px 20px;
+    margin: 10px 0px 0px 50px;
     padding: 5px;
-    border-radius:20px ;
+    border-radius:20px;  
 }
 .tocar{
-    font-size: 13px;
+    font-size: 20px;
     color: var(--white);
-    margin: 0px 0px 0px 0px;
+    margin: 1px 0px 0px 50px;
     padding: 2px;
     font-family: "Inter";
-    font-weight: bold; 
+    font-weight: bold;
+    text-align: center; 
 }
 #premiopag{
     background-color: var(--blancoon);
     padding: 20px;
     border-radius: 10px;
     width: auto;
-    margin: 10px 0px 0px 80px;
+    margin: 10px 0px 0px 100px;
     color: var(--blanco);
     font-family:"Inter";
     font-size: 20px;
@@ -434,11 +436,13 @@ button.lett:active,.btnInicio:active{
     transform: scale(1.2);
 }
 .felicidades{
-    font-size: 20px;
+    font-size: 25px;
     color: var(--white);
-    margin: 0px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     padding: 2px;
     font-family: "Inter";
+    text-align: center;
+    font-weight: bold;
 }
 .muñecofeliz{
     width: 150px;
