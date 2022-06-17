@@ -1,10 +1,20 @@
-var arr = ["BRAZIL", "ITALIA", "COLOMBIA", "CHILE", "FRANCIA", "AFRICA", "IRAN", "IRAK","BUlGARIA", "JAMAICA","AFGANISTAN","ALEMANIA","FRANCIA","VENEZUELA","VENECIA","JORDANIA","JAPON","GUATEMALA","ARGENTINA","SINGAPUR","INDONESIA","TAIWAN","LUXEMBURGO","NIGERIA","UCRANIA","GERMANIA","POLONIA","BELGICA","CANADA","MEXICO","HONDURAS","BOLIVIA","KENIA","MADAGASCAR","MAURITANIA","BAHAMAS"];
+var arr = ["NIGERIA", "UCRANIA", "GERMANIA", "POLONIA", "BELGICA", "CANADA", "MEXICO", "HONDURAS", "BOLIVIA", "KENIA", "MADAGASCAR", "MAURITANIA", "BAHAMAS", "SOBRINO", "ABUELO", "PADRE", "BISABUELA", "MADRINA", "PADRINO", "MADRE", "HERMANO", "TIO", "ESPOSA", "HIJO", "NIETO", "NIETA","FRESA", "BANANA", "MELON", "LECHOZA", "MANZANA", "MANGO", "LIMON", "KIWI", "PIÑA", "SANDIA", "NIPERO", "GRANADILLO", "CEREZA","ROJO", "AZUL", "AMARILLO", "TURQUEZA", "BEIGE", "ROSA", "NEGRO", "BLANCO", "MARRON", "VERDE", "NARANJA", "VIOLETA", "GRIS"];
 var intentos = 10;
 var sel = [];
 var ctrl = false;
 var rValue;
 var badWord = [];
 var auxLinea;
+/*Dividiendo arreglo*/
+var arraofarray=[];
+console.log("arreglo : ", arr);
+const LONGITUD_PEDAZOS = 13;
+
+for ( let i = 0; i<arr.length; i+= LONGITUD_PEDAZOS){
+    let pedazo = arr.slice(i,i+LONGITUD_PEDAZOS);
+    arraofarray.push(pedazo);
+}
+console.log("Areglo de arreglo:", arraofarray);
 /* Configuración canvas */
 var canvas = document.getElementById("cvDraw");
         var ctx = canvas.getContext("2d");
@@ -160,8 +170,8 @@ function getLetter(valor){
             if(ax1 > sel.length-2){
                 document.getElementById("win").style.display = "block";
                 document.getElementById("tcl").style.display = "none";
+               
                 ctrl = false;
-                
             }   
         }
 }
@@ -188,6 +198,7 @@ function newJuego(){
         rem.remove();
         auxLinea++;
     }
+    
     document.getElementById("puestas").innerHTML="";
     document.getElementById("lose").style.display = "none";
     document.getElementById("lose2").style.display = "none";
@@ -199,4 +210,4 @@ function newJuego(){
     sel = [];
     badWord = [];
     jugar();
-}
+}    
