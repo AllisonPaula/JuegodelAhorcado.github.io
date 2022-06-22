@@ -1,20 +1,17 @@
-var arr = ["NIGERIA", "UCRANIA", "GERMANIA", "POLONIA", "BELGICA", "CANADA", "MEXICO", "HONDURAS", "BOLIVIA", "KENIA", "MADAGASCAR", "MAURITANIA", "BAHAMAS", "SOBRINO", "ABUELO", "PADRE", "BISABUELA", "MADRINA", "PADRINO", "MADRE", "HERMANO", "TIO", "ESPOSA", "HIJO", "NIETO", "NIETA","FRESA", "BANANA", "MELON", "LECHOZA", "MANZANA", "MANGO", "LIMON", "KIWI", "PIÑA", "SANDIA", "NIPERO", "GRANADILLO", "CEREZA","ROJO", "AZUL", "AMARILLO", "TURQUEZA", "BEIGE", "ROSA", "NEGRO", "BLANCO", "MARRON", "VERDE", "NARANJA", "VIOLETA", "GRIS"];
+var arr = ["NIGERIA", "UCRANIA", "GERMANIA", "POLONIA", "BELGICA", "CANADA", "MEXICO", "HONDURAS", "BOLIVIA", "KENIA", "MADAGASCAR", "MAURITANIA"];
 var intentos = 10;
 var sel = [];
 var ctrl = false;
 var rValue;
 var badWord = [];
 var auxLinea;
-/*Dividiendo arreglo*/
-var arraofarray=[];
-console.log("arreglo : ", arr);
-const LONGITUD_PEDAZOS = 13;
-
-for ( let i = 0; i<arr.length; i+= LONGITUD_PEDAZOS){
-    let pedazo = arr.slice(i,i+LONGITUD_PEDAZOS);
-    arraofarray.push(pedazo);
+const btnColores = document.querySelector("#colors");
+/*Nuevo arreglo*/
+function colores(){
+    var array = ["ROJO", "AZUL", "AMARILLO", "TURQUEZA", "BEIGE", "ROSA", "NEGRO", "BLANCO", "MARRON", "VERDE", "NARANJA", "VIOLETA", "GRIS"];
+    var cambio = cambiar.replace("arr", "array");
 }
-console.log("Areglo de arreglo:", arraofarray);
+
 /* Configuración canvas */
 var canvas = document.getElementById("cvDraw");
         var ctx = canvas.getContext("2d");
@@ -71,7 +68,7 @@ function jugar(){
         }else{
             sel[i] = rValue.charAt(i);
         }
-    }
+    } alert("Página en mantenimiento");
     /*Crear lineas de palabra*/
     var aux = 0;
     while(aux < sel.length){
@@ -178,7 +175,7 @@ function getLetter(valor){
 function addWord(){
     var y = document.getElementById("toast-qr");
     y.className = "show";
-}
+} alert("Página en mantenimiento");
 function cancelAdd(){
     var y = document.getElementById("toast-qr");
     y.className = "hide";
@@ -198,7 +195,7 @@ function newJuego(){
         rem.remove();
         auxLinea++;
     }
-    
+   
     document.getElementById("puestas").innerHTML="";
     document.getElementById("lose").style.display = "none";
     document.getElementById("lose2").style.display = "none";
@@ -209,5 +206,7 @@ function newJuego(){
     intentos = 10;
     sel = [];
     badWord = [];
+    btnColores.onclick = colores;
     jugar();
-}    
+}   
+alert("Página en mantenimiento");
