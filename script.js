@@ -1,3 +1,4 @@
+alert("Página en mantenimiento");
 var arr = ["NIGERIA", "UCRANIA", "GERMANIA", "POLONIA", "BELGICA", "CANADA", "MEXICO", "HONDURAS", "BOLIVIA", "KENIA", "MADAGASCAR", "MAURITANIA"];
 var intentos = 10;
 var sel = [];
