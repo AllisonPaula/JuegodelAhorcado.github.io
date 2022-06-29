@@ -1,0 +1,20 @@
+*{
+    background: rgb(187, 150, 47);
+}
+.mantenimiento{
+    font-size: 15px;
+    font-weight:bold;
+    text-align:center;
+    margin-top:20px;
+}
+.compumante{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    padding: 2px;
+    margin: 15px;
+    
+}
+header{
+    text-align: center;
+}

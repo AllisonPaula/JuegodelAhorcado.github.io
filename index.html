@@ -4,7 +4,7 @@
 <head>
     <title>Juego Del Ahorcado</title>
     <link rel="stylesheet" href="reset.css/reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mantenimiento.css">
     <meta charset="UTF-8" lang="es">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,97 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap"
         rel="stylesheet">
 </head>
-<header class="headerPrincipal">
-    <div class="container">
-        <div class="headerPrincipal-nav">
-            <p class="temita">Elige un tema</p>
-            <button type = button id="colors">Colores</a>
-          
-        </div>
-        <input type="checkbox" id="toggle" class="btn btn-dark" onclick="cambiarModo()">
-        <label for="toggle" class="button"></label>
-        
-    </div>
+ 
+<header>
+    <img src =".\imageness\reparacion-de-laptops-quito.png" alt="computadora en mantenimiento" class="compumante">
 </header>
-
 <body>
-
-    <div class="content2 block" id="inicio">
-
-        <button id="home" class="btnInicio" onclick="jugar()">Iniciar Juego</button><br>
-        <img src="./imagenes/muñecopalo.png" class="muñecofeliz"><br>
-        <button id="home" class="btnInicio" onclick="addWord()">Agregar una Palabra</button>
-    </div>
-    <canvas id="cvDraw" width="200" height="200" style="border: none;">Canvas is not supported</canvas>
-    <div class="content" id="juego">
-        <div class="flex">
-            <div class="boxWords" id="words">
-            </div>
-        </div>
-        <div class="msgGame">
-            <span class="game" id="win">Felicidades has ganado el juego<form><a href="./home.html">
-                        <input type="button" value="Recibir premio" class="premiorecibido"></a>
-                </form></span><br>
-            <span class="game" id="lose">Oh no! Perdiste ¿Quieres intentarlo de nuevo?</span><br>
-            <span class="game" id="lose2">La palabra era: </span><br>
-            <span class="game" id="puestas"></span>
-        </div>
-        <div class="stats1 flex">
-            <div class="">
-                <button class="reload" onclick="newJuego()">Volver a jugar</button>
-            </div>
-            <div class="">
-                <button class="reload" onclick="window.location.reload()">Desistir</button>
-            </div>
-            <div class="datos" id="intent">Intentos: 10</div>
-        </div>
-        <div class="teclado" id="tcl">
-            <button onclick="getLetter('Q')" class="lett" id="Q">Q</button>
-            <button onclick="getLetter('W')" class="lett" id="W">W</button>
-            <button onclick="getLetter('E')" class="lett" id="E">E</button>
-            <button onclick="getLetter('R')" class="lett" id="R">R</button>
-            <button onclick="getLetter('T')" class="lett" id="T">T</button>
-            <button onclick="getLetter('Y')" class="lett" id="Y">Y</button>
-            <button onclick="getLetter('U')" class="lett" id="U">U</button>
-            <button onclick="getLetter('I')" class="lett" id="I">I</button>
-            <button onclick="getLetter('O')" class="lett" id="O">O</button>
-            <button onclick="getLetter('P')" class="lett" id="P">P</button>
-            <button onclick="getLetter('A')" class="lett" id="A">A</button>
-            <button onclick="getLetter('S')" class="lett" id="S">S</button>
-            <button onclick="getLetter('D')" class="lett" id="D">D</button>
-            <button onclick="getLetter('F')" class="lett" id="F">F</button>
-            <button onclick="getLetter('G')" class="lett" id="G">G</button>
-            <button onclick="getLetter('H')" class="lett" id="H">H</button>
-            <button onclick="getLetter('J')" class="lett" id="J">J</button>
-            <button onclick="getLetter('K')" class="lett" id="K">K</button>
-            <button onclick="getLetter('L')" class="lett" id="L">L</button>
-            <button onclick="getLetter('Ñ')" class="lett" id="Ñ">Ñ</button>
-            <button onclick="getLetter('Z')" class="lett" id="Z">Z</button>
-            <button onclick="getLetter('X')" class="lett" id="X">X</button>
-            <button onclick="getLetter('C')" class="lett" id="C">C</button>
-            <button onclick="getLetter('V')" class="lett" id="V">V</button>
-            <button onclick="getLetter('B')" class="lett" id="B">B</button>
-            <button onclick="getLetter('N')" class="lett" id="N">N</button>
-            <button onclick="getLetter('M')" class="lett" id="M">M</button>
-        </div>
-
-        <span>Allison Paula &copy; 2022 |
-            <a href="https://github.com/AllisonPaula">GitHub</a> |
-    </div>
-    <div id="toast-qr" class="toast">
-        <p>Ingrese la palabra</p>
-        <h6>Max. 8 letras.</h6>
-        <input type="text" id="palabra" onkeyup="upper()" maxlength="8" autocomplete="off" required>
-        <br>
-        <button class="toastbtn" onclick="valida()" class="btnJoin">Guardar y Empezar</button>
-        <button class="toastbtn" onclick="cancelAdd()" class="btnJoin">Cancelar</button>
-    </div>
-    <script type="text/javascript">
-        function cambiarModo() {
-            var cuerpoweb = document.body;
-            cuerpoweb.classList.toggle("oscuro");
-        }
-    </script>
+    <p class = "mantenimiento">DISCULPE LAS MOLESTIAS. ESTE SITIO WEB ESTÁ EN CONSTRUCCIÓN.<br>Queremos brindarte la mejor experiencia, así que estamos preparando algo increíble, emocionante y muy entretenido para ti.<br><br> ¡GRACIAS POR TU VISITA!</p>
 </body>
-<script src="./script.js"></script>
 </html>
